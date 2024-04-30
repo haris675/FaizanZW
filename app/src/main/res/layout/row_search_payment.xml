@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_5sdp">
+
+        <com.daimajia.swipe.SwipeLayout
+            android:id="@+id/swipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/_5sdp">
+
+            <LinearLayout
+                android:id="@+id/right"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:background="#FFC8DD"
+                android:gravity="center"
+                android:tag="Bottom3"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/txtCancel"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layout_height="wrap_content"
+                    android:text="Reject" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/left"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="wrap_content"
+                android:background="#C8FFD1"
+                android:elevation="5dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:tag="Bottom3">
+
+                <TextView
+                    android:id="@+id/txtReceived"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Accept" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/lnSeperator"
+                    android:layout_width="@dimen/_5sdp"
+                    android:background="@color/color_primary"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtPaymentNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="2dp"
+                            android:layout_weight="0.35"
+                            android:lineSpacingExtra="2dp"
+                            android:padding="5dp"
+                            android:includeFontPadding="false"
+                            android:fontFamily="@font/poppins_semibold"
+                            tools:text="Payment No: 415"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:id="@+id/txtDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="2dp"
+                            android:layout_weight="0.75"
+                            android:layout_gravity="end|center"
+                            android:gravity="end"
+                            android:lineSpacingExtra="2dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:padding="@dimen/_2sdp"
+                            android:includeFontPadding="false"
+                            tools:text="23-07-2019"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/txtSentBy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="2dp"
+                        android:layout_weight="0.4"
+                        android:padding="@dimen/_2sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Sent By: 8545126525"
+                        android:textColor="@android:color/black"
+                        android:includeFontPadding="false"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/txtExpenseType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="2dp"
+                        android:layout_weight="0.4"
+                        android:padding="@dimen/_2sdp"
+                        android:visibility="gone"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Expense Type: Samsung J7"
+                        android:textColor="@android:color/black"
+                        android:includeFontPadding="false"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                    <TextView
+                        android:id="@+id/txtReceivedBy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="2dp"
+                        android:padding="@dimen/_2sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Received by:"
+                        android:includeFontPadding="false"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/txtNetAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="2dp"
+                        android:padding="@dimen/_2sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        tools:text="Amount: Imran Shaikh"
+                        android:textColor="@android:color/black"
+                        android:includeFontPadding="false"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/txtCurrency"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="2dp"
+                        android:padding="@dimen/_2sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        tools:text="Amount: Imran Shaikh"
+                        android:textColor="@android:color/black"
+                        android:includeFontPadding="false"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/txtStatus"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="2dp"
+                            android:padding="@dimen/_2sdp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Status:"
+                            android:includeFontPadding="false"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llOption"
+                        android:layout_width="match_parent"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/btnAccept"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ACCEPT"
+                            android:fontFamily="@font/poppins_medium"
+                            android:includeFontPadding="false"
+                            style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+                        <Button
+                            android:id="@+id/btnReject"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Reject"
+                            android:fontFamily="@font/poppins_medium"
+                            android:includeFontPadding="false"
+                            android:textColor="@color/light_red"
+                            style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+                        <Button
+                            android:id="@+id/txtViewMode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="View More"
+                            android:fontFamily="@font/poppins_medium"
+                            android:includeFontPadding="false"
+                            android:textColor="@color/color_primary"
+                            style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </com.daimajia.swipe.SwipeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/llToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvProgressList"
+        android:layout_below="@+id/llToolbar"
+        android:paddingVertical="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        tools:listitem="@layout/row_assosiate_task"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

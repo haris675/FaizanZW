@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/txtSpinner"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:text="ddddd"
+    android:paddingStart="@dimen/_10sdp"
+    android:includeFontPadding="false"
+    android:paddingVertical="@dimen/_12sdp"
+    android:fontFamily="@font/poppins_regular"
+    android:textSize="@dimen/_13sdp"
+    android:textColor="@color/color_primary"
+    android:layout_height="wrap_content">
+
+</TextView>

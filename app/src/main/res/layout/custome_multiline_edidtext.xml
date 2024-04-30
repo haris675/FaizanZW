@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_25sdp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Casualty Reference Number"
+        android:textFontWeight="400"
+        android:includeFontPadding="false"
+        android:textSize="@dimen/_13sdp" />
+
+    <RelativeLayout
+        android:id="@+id/rlEditText"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:background="@drawable/spinner_rounded_bg"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/edtDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_10sdp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:hint="Write here..."
+        android:inputType="textMultiLine|textCapWords"
+        android:includeFontPadding="false"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/color_primary"
+        android:textFontWeight="400"
+        android:maxLines="4"
+        android:minLines="3"
+        android:textSize="@dimen/_13sdp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Casualty Reference Number"
+        android:textFontWeight="400"
+        android:visibility="gone"
+        android:textColor="@color/light_red"
+        android:includeFontPadding="false"
+        android:textSize="@dimen/_11sdp" />
+
+    <View
+        android:id="@+id/edtView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:visibility="gone"
+        android:layout_marginHorizontal="@dimen/_11sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="#F2F2F2" />
+
+</LinearLayout>

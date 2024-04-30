@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.app.faizanzw.ui.postLogin.fragments.search.ExpenseSearch" />
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:cardElevation="@dimen/_5sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/lnSeperator"
+                    android:layout_width="@dimen/_5sdp"
+                    android:background="@color/color_primary"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTaskNo"
+                        android:layout_marginStart="2dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Expense Task No:"
+                        style="@style/dialog_textview"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginStart="2dp"
+                            android:text="Date:"
+                            android:layout_weight="0.75"
+                            style="@style/dialog_textview" />
+
+                        <TextView
+                            android:id="@+id/txtDate"
+                            android:layout_marginStart="2dp"
+                            android:text="23-07-2019"
+                            android:layout_weight="0.35"
+                            style="@style/dialog_textview" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginEnd="2dp"
+                            android:layout_weight="0.75"
+                            android:text="Party Name:"
+                            style="@style/dialog_textview" />
+
+                        <TextView
+                            android:id="@+id/txtPartynane"
+                            android:layout_marginEnd="2dp"
+                            android:layout_weight="0.35"
+                            android:text="@{model.partyName}"
+                            style="@style/dialog_textview" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginEnd="2dp"
+                            android:layout_weight="0.75"
+                            android:text="Expense Type:"
+                            style="@style/dialog_textview" />
+
+                        <TextView
+                            android:id="@+id/txtExpenseType"
+                            android:layout_marginEnd="2dp"
+                            android:layout_weight="0.35"
+                            android:text="@{model.accGroupName}"
+                            style="@style/dialog_textview" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginEnd="2dp"
+                            android:layout_weight="0.75"
+                            android:text="Payment Type:"
+                            style="@style/dialog_textview" />
+
+                        <TextView
+                            android:id="@+id/txtPaymentType"
+                            android:layout_marginEnd="2dp"
+                            android:layout_weight="0.35"
+                            style="@style/dialog_textview"
+                            android:text="@{model.paymentType}" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginEnd="2dp"
+                            android:text="Net Amount:"
+                            android:layout_weight="0.75"
+                            android:fontFamily="@font/poppins_medium"
+                            style="@style/dialog_textview" />
+
+                        <TextView
+                            android:id="@+id/txtNetAmount"
+                            android:layout_marginEnd="2dp"
+                            android:text="@{model.netAmount}"
+                            android:layout_weight="0.35"
+                            style="@style/dialog_textview" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginEnd="2dp"
+                            android:text="Status:"
+                            android:fontFamily="@font/poppins_medium"
+                            android:layout_weight="0.75"
+                            style="@style/dialog_textview" />
+
+                        <TextView
+                            android:id="@+id/txtStatus"
+                            android:layout_marginEnd="2dp"
+                            android:text="@{model.expenseStatus}"
+                            android:layout_weight="0.35"
+                            style="@style/dialog_textview" />
+
+                    </LinearLayout>
+
+                    <!--<LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginStart="2dp"
+                            android:text="Priority:"
+                            android:layout_weight="0.75"
+                            android:fontFamily="@font/poppins_medium"
+                            style="@style/dialog_textview" />
+
+                        <TextView
+                            android:id="@+id/txtPriority"
+                            android:layout_marginStart="2dp"
+                            android:text="@{model.partyName}"
+                            android:layout_weight="0.35"
+                            style="@style/dialog_textview" />
+
+
+                    </LinearLayout>-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginEnd="2dp"
+                            android:text="Currency:"
+                            android:layout_weight="0.75"
+                            android:fontFamily="@font/poppins_medium"
+                            style="@style/dialog_textview" />
+
+                        <TextView
+                            android:id="@+id/txtCurrency"
+                            android:layout_marginEnd="2dp"
+                            android:text="@{model.currencey}"
+                            android:layout_weight="0.35"
+                            style="@style/dialog_textview" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginEnd="2dp"
+                            android:text="Reference:"
+                            android:layout_weight="0.75"
+                            android:fontFamily="@font/poppins_medium"
+                            style="@style/dialog_textview" />
+
+                        <TextView
+                            android:id="@+id/txtDescription"
+                            android:layout_marginEnd="2dp"
+                            android:text="@{model.refrenceNo}"
+                            android:layout_weight="0.35"
+                            style="@style/dialog_textview" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_22sdp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            style="@style/Widget.MaterialComponents.Button.TextButton"
+                            android:id="@+id/btnCancel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Cancel"
+                            android:textSize="@dimen/_12sdp"
+                            android:textColor="@color/light_red"
+                            android:layout_weight="1" />
+
+                        <Button
+                            android:id="@+id/btnInProgress"
+                            style="@style/Widget.MaterialComponents.Button.TextButton"
+                            android:text="In-Progress"
+                            android:layout_weight="1"
+                            android:textSize="@dimen/_12sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <Button
+                            style="@style/Widget.MaterialComponents.Button.TextButton"
+                            android:id="@+id/btnComplete"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Complete"
+                            android:textSize="@dimen/_12sdp"
+                            android:textColor="@color/color_primary"
+                            android:layout_weight="1" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</layout>

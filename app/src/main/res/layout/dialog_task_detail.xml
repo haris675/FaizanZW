@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/lnSeperator"
+                android:layout_width="@dimen/_5sdp"
+                android:background="@color/color_primary"
+                android:orientation="vertical"
+                android:layout_height="match_parent"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtTaskNo"
+                    android:layout_marginStart="2dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Task No:"
+                    style="@style/dialog_textview"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="@dimen/_13sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_marginStart="2dp"
+                        android:text="Date:"
+                        android:layout_weight="0.75"
+                        style="@style/dialog_textview" />
+
+                    <TextView
+                        android:id="@+id/txtDate"
+                        android:layout_marginStart="2dp"
+                        android:text="23-07-2019"
+                        android:layout_weight="0.35"
+                        style="@style/dialog_textview" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_marginEnd="2dp"
+                        android:layout_weight="0.75"
+                        android:text="Created By:"
+                        style="@style/dialog_textview" />
+
+                    <TextView
+                        android:id="@+id/txtCreatedBy"
+                        android:layout_marginEnd="2dp"
+                        android:layout_weight="0.35"
+                        android:text="Created By: Imran Shaikh"
+                        style="@style/dialog_textview" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_marginEnd="2dp"
+                        android:layout_weight="0.75"
+                        android:text="Assigned To:"
+                        style="@style/dialog_textview" />
+
+                    <TextView
+                        android:id="@+id/txtAssigned"
+                        android:layout_marginEnd="2dp"
+                        android:layout_weight="0.35"
+                        android:text="Assigned To: 8545126525"
+                        style="@style/dialog_textview" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_marginEnd="2dp"
+                        android:layout_weight="0.75"
+                        android:text="Task Type:"
+                        style="@style/dialog_textview" />
+
+                    <TextView
+                        android:id="@+id/txtTaskType"
+                        android:layout_marginEnd="2dp"
+                        android:layout_weight="0.35"
+                        style="@style/dialog_textview"
+                        android:text="Task Type: Samsung J7" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_marginEnd="2dp"
+                        android:text="Description:"
+                        android:layout_weight="0.75"
+                        android:fontFamily="@font/poppins_medium"
+                        style="@style/dialog_textview" />
+
+                    <TextView
+                        android:id="@+id/txtDescription"
+                        android:layout_marginEnd="2dp"
+                        android:text="Description:"
+                        android:layout_weight="0.35"
+                        style="@style/dialog_textview" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_marginEnd="2dp"
+                        android:text="Status:"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_weight="0.75"
+                        style="@style/dialog_textview" />
+
+                    <TextView
+                        android:id="@+id/txtStatus"
+                        android:layout_marginEnd="2dp"
+                        android:text="Status:"
+                        android:layout_weight="0.35"
+                        style="@style/dialog_textview" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_marginStart="2dp"
+                        android:text="Priority:"
+                        android:layout_weight="0.75"
+                        android:fontFamily="@font/poppins_medium"
+                        style="@style/dialog_textview" />
+
+                    <TextView
+                        android:id="@+id/txtPriority"
+                        android:layout_marginStart="2dp"
+                        android:text="Priority:"
+                        android:layout_weight="0.35"
+                        style="@style/dialog_textview" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_22sdp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnInProgress"
+                        style="@style/btnBlueSquare"
+                        android:text="In-Progress"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        app:backgroundTint="@color/bg_pink" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnComplete"
+                        style="@style/btnBlueSquare"
+                        android:text="Complete"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        app:backgroundTint="@color/color_primary" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

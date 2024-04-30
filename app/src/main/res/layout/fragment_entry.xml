@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/llToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llToolbar"
+        android:layout_marginTop="@dimen/_10sdp"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textHint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Balance"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:textFontWeight="400"
+                    android:includeFontPadding="false"
+                    android:textSize="@dimen/_13sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnUSD"
+                        style="@style/btnBlueSquare"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginHorizontal="0dp"
+                        tools:text="USD (100000000)"
+                        app:elevation="0dp"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/_11sdp"
+                        android:elevation="@dimen/_2sdp"
+                        app:cornerRadius="@dimen/_5sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        app:backgroundTint="@color/color_primary" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnOther"
+                        style="@style/btnBlueSquare"
+                        android:layout_marginHorizontal="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        tools:text="Other (10000000)"
+                        android:textAlignment="center"
+                        app:elevation="0dp"
+                        android:elevation="@dimen/_2sdp"
+                        android:textSize="@dimen/_11sdp"
+                        app:cornerRadius="@dimen/_5sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        app:backgroundTint="@color/color_primary" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.app.faizanzw.customui.CustomTextViewUi
+                android:id="@+id/edtExpenseNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:maxLength="80"
+                android:visibility="gone"
+                android:maxLines="1"
+                app:hint="@string/expense_no"
+                app:title="" />
+
+            <com.app.faizanzw.customui.CustomTextViewUi
+                android:id="@+id/edtDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:maxLength="80"
+                android:visibility="gone"
+                android:maxLines="1"
+                app:hint="Date"
+                app:title="" />
+
+
+            <com.app.faizanzw.customui.CustomSpinnerUi
+                android:id="@+id/spnCurrency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:inputType="textMultiLine"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                app:hint="@string/currency_dropdown" />
+
+             <com.app.faizanzw.customui.CustomSpinnerUi
+                 android:id="@+id/spnStatus"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="@dimen/_10sdp"
+                 android:layout_marginHorizontal="@dimen/_15sdp"
+                 android:inputType="textMultiLine"
+                 android:maxLength="150"
+                 android:visibility="gone"
+                 android:maxLines="3"
+                 app:hint="@string/expense_status"
+                 app:title="" />
+
+            <com.app.faizanzw.customui.CustomSpinnerUi
+                android:id="@+id/spntype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                app:hint="@string/expense_type" />
+
+            <com.app.faizanzw.customui.CustomEditText
+                android:id="@+id/edtAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:maxLines="1"
+                app:hint="@string/amount"
+                app:title="" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="USD"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="@dimen/_13sdp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/chkCurrency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_7sdp"
+                    android:layout_marginEnd="@dimen/_7sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    app:track="@drawable/switch_track_selector"
+                    android:thumb="@drawable/thumb_selector" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Other"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <com.app.faizanzw.customui.CustomSpinnerUi
+                android:id="@+id/spnPayType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:inputType="textMultiLine"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                app:hint="@string/pay_type" />
+
+
+            <com.app.faizanzw.customui.CustomEditText
+                android:id="@+id/edtDollar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:inputType="numberDecimal"
+                android:maxLength="8"
+                android:maxLines="1"
+                app:hint="1 Dollar ="
+                app:title="" />
+
+            <com.app.faizanzw.customui.CustomEditText
+                android:id="@+id/edtReference"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:inputType="text"
+                android:maxLength="100"
+                android:maxLines="1"
+                app:hint="@string/reference"
+                app:title="" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/llUploadImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgAdd"
+                        android:src="@drawable/plus"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp" />
+
+                    <TextView
+                        android:id="@+id/txtImageError"
+                        android:layout_width="wrap_content"
+                        android:text="Upload Image"
+                        android:textColor="@color/color_primary"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:includeFontPadding="false"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgView"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:textColor="@color/color_primary"/>
+
+            </LinearLayout>
+
+            <com.app.faizanzw.customui.CustomMultiLineEdittext
+                android:id="@+id/edtRemarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:maxLength="150"
+                android:layout_marginBottom="@dimen/_10sdp"
+                app:hint="@string/remarks"
+                app:title="" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSave"
+                style="@style/btnBlueSquare"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_22sdp"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:text="@string/save"
+                app:backgroundTint="@color/color_primary" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

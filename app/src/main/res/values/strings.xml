@@ -1,0 +1,114 @@
+<resources>
+    <string name="app_name">FaizanZW</string>
+    <string name="signin">Sign In </string>
+    <string name="email_address">Email address</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="company_code">Company Code</string>
+    <string name="change">Change Code</string>
+    <string name="user_name">User Name</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="pending_expense">Pending Expense</string>
+    <string name="new_tasl">New Task</string>
+    <string name="in_progress_task">In Progress Task</string>
+    <string name="pending_payment">Pending Payment</string>
+    <string name="expense_entry">Expense Entry</string>
+    <string name="create_task">Create Task</string>
+    <string name="payment_entry">Payment Entry</string>
+    <string name="regular_entry">Regular Task</string>
+    <string name="sync_data">Sync Data</string>
+    <string name="delivery_task">Delivery Task</string>
+    <string name="unsync_data">Unsync Delivery Task</string>
+    <string name="expense_no">Expense No</string>
+    <string name="amount">Amount</string>
+    <string name="challan">Challan</string>
+    <string name="expense_status">Expense Status</string>
+    <string name="expense_type">Expense Type</string>
+    <string name="remarks">Remarks</string>
+    <string name="save">Save</string>
+    <string name="task_no">Task No</string>
+    <string name="task_type">Select Task Type</string>
+    <string name="task_priority">Task Prioroty</string>
+    <string name="task_description">Task Description</string>
+    <string name="pay_no">Pay No</string>
+    <string name="payment_to">Payment To</string>
+    <string name="search_expense">Search Expense</string>
+    <string name="search_task">Search Task</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="no_internet">No Internet Connection</string>
+    <string name="select_task_status">Select Task Status</string>
+    <string name="select_task_type">Select Task Type</string>
+    <string name="search">Search</string>
+    <string name="search_payment">Search Payment</string>
+    <string name="currency_dropdown">Select Currency</string>
+    <string name="pay_type">Pay Type</string>
+    <string name="reference">Reference</string>
+    <string name="branch_dropdown">Select Branch</string>
+    <string name="employee_dropdown">Select Employee</string>
+    <string name="task_type1">Task Type</string>
+    <string name="task_status">Task Status</string>
+
+    <string name="with_bold_double"><b>%1$s</b> %2$s </string>
+    <string name="refresh">Refresh</string>
+    <string name="submit">Submit</string>
+
+    <string-array name="arr_expense_status">
+        <item>SELECT ALL</item>
+        <item>PENDING</item>
+        <item>APPROVED</item>
+    </string-array>
+
+    <string-array name="arr_add_expense_status">
+        <item>PENDING</item>
+        <item>APPROVED</item>
+    </string-array>
+
+    <string-array name="arr_task_status">
+        <item>SELECT ALL</item>
+        <item>NEW</item>
+        <item>INPROGRESS</item>
+        <item>COMPLETED</item>
+    </string-array>
+
+    <string-array name="arr_edit_task_status">
+        <item>NEW</item>
+        <item>INPROGRESS</item>
+        <item>COMPLETED</item>
+    </string-array>
+
+    <string-array name="arr_expense_type">
+        <item>Select ALL</item>
+        <item>Pending</item>
+        <item>Approved</item>
+        <item>Rejected</item>
+    </string-array>
+
+    <string-array name="arr_payment_status">
+        <item>SELECT ALL</item>
+        <item>PENDING</item>
+        <item>ACCEPT</item>
+        <item>REJECT</item>
+    </string-array>
+
+    <string-array name="arr_priority">
+        <item>Select Priority</item>
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+    </string-array>
+
+    <string-array name="arr_payment_to">
+        <item>Select Payee</item>
+        <item>Imran</item>
+        <item>Haris</item>
+        <item>Faisal</item>
+    </string-array>
+
+    <string-array name="arr_pay_type">
+        <item>CASH</item>
+        <item>BANK</item>
+        <item>CARD</item>
+    </string-array>
+
+</resources>

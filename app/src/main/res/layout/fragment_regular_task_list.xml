@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/llToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRefresh"
+        style="@style/btnBlueSquare"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginHorizontal="@dimen/_30sdp"
+        android:text="@string/refresh"
+        app:elevation="0dp"
+        app:cornerRadius="@dimen/_10sdp"
+        app:backgroundTint="@color/color_primary"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTaskList"
+        android:paddingVertical="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        tools:listitem="@layout/row_assosiate_task"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

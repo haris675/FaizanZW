@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Casualty Reference Number"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:textFontWeight="400"
+        android:includeFontPadding="false"
+        android:textSize="@dimen/_12sdp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/poppins_regular"
+            android:includeFontPadding="false"
+            android:text="Casualty Reference Number"
+            android:textColor="@color/color_primary"
+            android:textFontWeight="400"
+            android:textSize="@dimen/_13sdp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/_11sdp"
+            android:layout_height="@dimen/_11sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_dropdown_light" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="#F2F2F2"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginHorizontal="@dimen/_11sdp"
+        android:layout_height="1dp"/>
+
+</LinearLayout>

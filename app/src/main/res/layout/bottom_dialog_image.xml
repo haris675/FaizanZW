@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/txt_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Choose image"
+        android:textColor="@color/gray_918F9A"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linCamera"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:foreground="?selectableItemBackgroundBorderless"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/txt_camera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Take Photo"
+                android:textColor="@color/text_color_one"
+                android:textSize="16dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linGallery"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:foreground="?selectableItemBackgroundBorderless"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/txt_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Open Gallery"
+                android:textColor="@color/text_color_one"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linCancel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:foreground="?selectableItemBackgroundBorderless"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Cancel"
+                android:textColor="@color/text_color_one"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

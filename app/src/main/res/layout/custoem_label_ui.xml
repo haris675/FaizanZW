@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        tools:text="Casualty Reference Number"
+        android:textColor="@color/black"
+        android:includeFontPadding="false"
+        android:textSize="@dimen/_13sdp" />
+
+
+        <TextView
+            android:id="@+id/edtDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            tools:text="dsaddadasdsa"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@android:color/transparent"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/_13sdp" />
+
+
+</LinearLayout>

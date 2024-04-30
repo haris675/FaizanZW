@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="hint" format="string" />
+    <attr name="title" format="string" />
+    <attr name="text_color" format="integer" />
+
+    <declare-styleable name="CustomDropDownView">
+        <attr name="hint" />
+        <attr name="title" />
+        <attr name="android:visible" format="enum" />
+        <attr name="image" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomEditTextView">
+        <attr name="hint" />
+        <attr name="title" />
+        <attr name="android:maxLength" format="integer" />
+        <attr name="android:inputType" format="flags" />
+        <attr name="android:digits" format="string" />
+        <attr name="android:maxLines" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomTextUI">
+        <attr name="hint" />
+        <attr name="title" />
+        <attr name="text_color" />
+    </declare-styleable>
+
+</resources>

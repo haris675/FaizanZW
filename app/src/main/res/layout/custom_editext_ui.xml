@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_25sdp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Casualty Reference Number"
+        android:textFontWeight="400"
+        android:includeFontPadding="false"
+        android:textSize="@dimen/_13sdp" />
+
+    <RelativeLayout
+        android:id="@+id/rlEditText"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/spinner_rounded_bg"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtDesc"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_centerVertical="true"
+            android:hint="Write here..."
+            android:background="@android:color/transparent"
+            android:paddingStart="@dimen/_10sdp"
+            android:includeFontPadding="false"
+            android:inputType="textCapWords"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/color_primary"
+            android:textFontWeight="400"
+            android:textSize="@dimen/_13sdp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Casualty Reference Number"
+        android:textFontWeight="400"
+        android:visibility="gone"
+        android:textColor="@color/light_red"
+        android:includeFontPadding="false"
+        android:textSize="@dimen/_11sdp" />
+
+</LinearLayout>
